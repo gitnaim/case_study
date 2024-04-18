@@ -1,0 +1,314 @@
+﻿@charset "utf-8";
+
+body {
+	font-family: "Roboto", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+}
+
+/* #start */
+#start {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	background: url(../images/kitchen.jpg) no-repeat center center;
+	background-size: cover;
+}
+#start::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.3);
+}
+#start .top {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 80px;
+}
+#start .top .logo {
+	padding: 30px 0 0 30px;
+}
+#start .right {
+	display: flex;
+}
+#start .right .tel {
+	display: flex;
+	align-items: center;
+	padding: 0 40px 0 20px;
+	height: 80px;
+}
+#start .right .tel span {
+	display: inline-block;
+	position: relative;
+	margin-left: 20px;
+	letter-spacing: 3px;
+	color: #fff;
+}
+#start .right .tel span:first-child {
+	margin-left: 0;
+}
+#start .right .tel span::before {
+	content: "";
+	position: absolute;
+	left: -12px;
+	top: 8px;
+	width: 3px;
+	height: 3px;
+	background-color: #fff;
+}
+#start .right .tel span:first-child::before {
+	display: none;
+}
+#start .right .service ul {
+	display: flex;
+	align-items: center;
+	padding: 0 26px;
+	height: 80px;
+}
+#start .right .service ul li {
+	margin-left: 18px;
+}
+#start .right .service ul li:first-child {
+	margin-left: 0;
+}
+#start .right .service ul li a {
+	display: block;
+	text-align: center;
+}
+#start .right .service ul li a img {
+	width: 26px;
+}
+#start .right .service ul li a span {
+	display: block;
+	font-size: 0.813em;
+	font-weight: 500;
+	color: #fff;
+}
+#start .right .tab a {
+	display: block;
+	padding: 30px 80px 0 30px;
+	width: 240px;
+	height: 80px;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+#start .right .tab a span {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 0.913em;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+#start .keytext {
+	position: absolute;
+	left: 50%;
+	top: 35vh;
+	z-index: 100;
+	width: 1440px;
+	transform: translateX(-50%);
+}
+#start .keytext h2 {
+	width: 350px;
+}
+#start .keytext p {
+	margin-top: 40px;
+	line-height: 1.7;
+	font-size: 1.375em;
+	font-weight: 300;
+	color: #fff;
+}
+#start .keytext a {
+	display: block;
+	position: relative;
+	margin-top: 25px;
+	padding: 22px 0;
+	width: 270px;
+	font-size: 0.875em;
+	font-weight: 300;
+	letter-spacing: 12px;
+	color: #fff;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+#start .keytext a::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 20px;
+	height: 15px;
+	background: url(../images/icon_arrow.png) no-repeat;
+	background-size: cover;
+	transform: translateY(-50%);
+}
+#start .line_group1 {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 1440px;
+	height: 100%;
+	border-left: 1px solid rgba(255,255,255,.2);
+	border-right: 1px solid rgba(255,255,255,.2);
+	transform: translateX(-50%);
+}
+#start .line_group2 {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 480px;
+	height: 100%;
+	border-left: 1px solid rgba(255,255,255,.2);
+	border-right: 1px solid rgba(255,255,255,.2);
+	transform: translateX(-50%);
+}
+
+/* #global_menu */
+#global_menu {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1000;
+	background-color: #fff;
+}
+#global_menu .top {
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 80px;
+}
+#global_menu .top .tab a {
+	display: block;
+	padding: 30px 80px 0 30px;
+	width: 240px;
+	height: 80px;
+	box-sizing: border-box;
+}
+#global_menu .top .tab a span {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 0.913em;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+#global_menu .content {
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 100;
+	margin: 0 auto;
+	width: 1440px;
+	height: 100vh;
+}
+#global_menu .content .content_inner {
+	display: flex;
+}
+#global_menu .content .left_content .link {
+	padding-top: 18px;
+}
+#global_menu .content .left_content .link ul {
+	display: flex;
+}
+#global_menu .content .left_content .link ul li {
+	margin-left: 22px;
+}
+#global_menu .content .left_content .link ul li:first-child {
+	margin-left: 0;
+}
+#global_menu .content .left_content .link ul li a {
+	font-size: 0.813em;
+	color: #999;
+}
+#global_menu .content .left_content .link ul li:first-child a {
+	font-weight: 600;
+}
+#gnb {
+	padding-left: 32px;
+	padding-top: 12px;
+	width: 690px;
+	box-sizing: border-box;
+}
+#gnb ul li a {
+	line-height: 1.5;
+	font-size: 4em;
+	font-weight: 600;
+	color: #fff;
+	text-shadow: 0 0 2px rgba(0,0,0,.6);
+}
+#gnb ul li.active a {
+	color: #000
+}
+#global_menu .right_content {
+	position: relative;
+	padding-left: 32px;
+	width: 480px;
+	box-sizing: border-box;
+}
+#global_menu .right_content .label {
+	position: absolute;
+	left: -50px;
+	top: 74px;
+	font-family: "EB Garamond", serif;
+	font-size: 2.25em;
+	color: #e2e2e2;
+}
+#global_menu .right_content .category {
+	padding-top: 80px;
+}
+#global_menu .right_content .category strong {
+	font-size: 1.25em;
+	font-weight: 500;
+}
+#global_menu .right_content .category p {
+	padding-top: 5px;
+	font-size: 0.913em;
+	font-weight: 300;
+}
+#global_menu .right_content .category .list {
+	padding-top: 45px;
+}
+#global_menu .right_content .category .list li {
+	margin-top: 35px;
+}
+#global_menu .right_content .category .list li:first-child {
+	margin-top: 0;
+}
+#global_menu .right_content .category .list li a {
+	font-size: 1.875em;
+	font-weight: 300;
+}
+#global_menu .right_content .description {
+	padding-top: 250px;
+	font-weight: 300;
+}
+#global_menu .line_group1 {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 1440px;
+	height: 100%;
+	border-right: 1px solid rgba(0,0,0,.1);
+	transform: translateX(-50%);
+}
+#global_menu .line_group2 {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 480px;
+	height: 100%;
+	border-right: 1px solid rgba(0,0,0,.1);
+	transform: translateX(-50%);
+}
